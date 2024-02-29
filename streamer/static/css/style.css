@@ -1,0 +1,128 @@
+html {
+    width: 100%; height: 100%;
+    margin: 0px; padding: 0px;
+    display: flex;
+    box-sizing: border-box;
+    user-select: none;
+
+    background-image: url('Wavy_grass.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: rgba(235, 235, 235, 1.0);
+    font-family: "Microsoft YaHei";
+}
+body {
+    width: 100%; height: 100%;
+    margin: 0px; padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+/* 广播地址 */
+#url_div {
+    width: 100%;
+    margin: 0px; padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 垂直居中 */
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+#url_span {
+    user-select: text;
+    margin-left: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(235, 235, 235, 0.3);
+    font-size: 18px;
+}
+/* 广播列表 */
+#items_div {
+    position: relative;
+    width: 100%; height: 100%;
+    margin: 0px; padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+#upload_div {
+    position: absolute;
+    top: 0px; left: 0px; width: 100%; height: 100%;
+    border-radius: 20px;
+    display: none; 
+}
+.dragover {
+    display: block !important;
+    background-color: rgba(120, 120, 120, 0.3) !important; 
+}
+/* 上传进度 */
+#upload_progress_div {
+    width: 100px; height: 100px;
+    display: none;
+    background-color: rgba(235, 235, 235, 0.3);
+    border-radius: 10px;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+#upload_progress_span {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(235, 235, 235, 0.8);
+    font-family: "Microsoft YaHei";
+}
+/* 播放标识 */
+.status_li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* 全局元素 */
+ul {
+    width: 100%; height: 100%;
+    margin: 0px; padding: 0px;
+    overflow: auto;
+    list-style: none;
+    box-sizing: border-box;
+}
+li {
+    margin: 0px; padding: 0px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.0);
+    display: flex;
+    align-items: center;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: 200;
+}
+li:hover {
+    margin: 0px; padding: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+li div {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+li button {
+    height: 25px;
+    border-radius: 5px;
+    border-width: 0px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(200, 200, 200, 1.0);
+}
+li button:hover {
+    background-color: rgba(150, 150, 150, 0.1);
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>streamer</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div id="url_div">
+            <h1>广播地址</h1>
+            <span id="url_span">rtsp://0.0.0.0:8554/</span>
+        </div>
+        <div id="items_div">
+            <h1>广播列表</h1>
+            <ul id="items_ul"></ul>
+            <div id="upload_div"></div>
+        </div>
+        <div id="upload_progress_div">
+            <span id="upload_progress_span">0%</span>
+        </div>
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
